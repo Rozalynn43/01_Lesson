@@ -61,14 +61,30 @@ img{
     width: 40px;
 }
 .Overview-sub{
-    position:relative;
     width:50%;
+    position: relative;
+    left: 150px;
 }
 .os{
     display:block;
     width:200%;
-    height: auto;
+    height: 100%;
 }
+
+.Overview-sub2{
+    width:10%;
+    height: 10%;
+    position: relative;
+    left: 150px;
+}
+
+.oa{
+    display:block;
+    width:200%;
+    height: 150%;
+
+}
+
 .overlay{
     position:absolute;
     bottom:100%;
@@ -76,14 +92,14 @@ img{
     right:0;
     overflow:hidden;
     height:0;
-    width:100%;
+    width:200%;
     transition: .5s ease;
     background-color:#ff8381;
 }
 .Overview-sub:hover .overlay{
  bottom:0;
  height:100%;
- width:100%;
+ width:200%;
 
 }
 .text{
@@ -100,6 +116,7 @@ img{
 
 .Overview-sub{
     width:100px;
+    
     
 }
 .logo {
@@ -184,6 +201,11 @@ img{
     box-shadow:0 8px 32px ;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 } 
+
+.overview-container {
+    display: flex;
+    gap: 200px;
+}
 
 .footer{
     text-align: center;

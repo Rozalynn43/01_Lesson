@@ -7,6 +7,8 @@
 .navbar { 
    background-color: #E53E3E;
    padding: 20px;
+   overflow: auto;
+   width:100%;
    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 
 }
@@ -16,13 +18,12 @@ img{
 .nav-container{
     max-width: 1200px;
     margin:0 auto;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
+    display:flex; 
+    justify-content: space-between; 
+    background-color:#E53E3E;
 }
 
 .nav-links {
-    display: flex;
     list-style: none;
     gap:30px;
     color: blue;
@@ -31,8 +32,12 @@ img{
     color: pink;
     text-decoration: none;
     font-size:18px;
-    padding: 10px 20px;
+    padding: 12px;
     border-radius: 20px;
+    float:left;
+    width: 33.33%;
+    text-align:center;
+
 
 }
 

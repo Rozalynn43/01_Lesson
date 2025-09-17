@@ -21,18 +21,15 @@ body{
 .navbar { 
    background-color: #E53E3E;
    padding: 12px;
-   
-  
-
-
 }
+
 .nav-container{
     max-width: 1200px;
     margin:0 auto;
     display:flex;
-    justify-content: center;
+    align-items:center;
+    justify-content:space-between;
     background-color:#E53E3E;
-    /* align-items: right; */
 }
 
 .nav-links {
@@ -62,6 +59,7 @@ body{
 img{
     width: 40px;
 }
+
 .Overview-sub{
     width:50%;
     position: relative;
@@ -126,6 +124,9 @@ img{
     font-size: 24px;
     font-weight: bold;
     text-decoration: none;
+    display:flex;
+    align-items:center;
+    gap: 20px;
     
 
 }

@@ -14,13 +14,13 @@ body{
 } 
 .Overview{
     background-color:pink;
-    color:#FE6066;
+    color:black;
     padding:10px;
 }
 
 .navbar { 
    background-color: #E53E3E;
-   padding: 12px;
+   padding: 50px;
 }
 
 .nav-container{
@@ -37,6 +37,10 @@ body{
     list-style: none;
     gap:30px;
     color:transparent;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-style: italic;
 } 
 .nav-links a {
     color: pink;
@@ -44,6 +48,8 @@ body{
     font-size:18px;
     padding: 10px 20px;
     border-radius: 20px;
+    font-size: 25px;
+    font-style: italic;
 
 }
 
@@ -121,12 +127,14 @@ img{
 }
 .logo {
     color: White;
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 20px;
+    font-style: italic;
     text-decoration: none;
     display:flex;
     align-items:center;
-    gap: 20px;
+    gap: 20px; 
+    font-style: italic;
+    /* font-family:'Lucida Handwriting', cursive; */
     
 
 }
@@ -187,7 +195,7 @@ img{
 
 }
 .main-subtitle{
-    color:#FF8381;
+    color:black;
 }
 
 .content-grid {

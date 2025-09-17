@@ -20,8 +20,9 @@ body{
 
 .navbar { 
    background-color: #E53E3E;
-   padding: 20px;
-   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+   padding: 12px;
+   
+  
 
 
 }
@@ -29,7 +30,7 @@ body{
     max-width: 1200px;
     margin:0 auto;
     display:flex;
-    justify-content: space-between;
+    justify-content: center;
     background-color:#E53E3E;
     /* align-items: right; */
 }
@@ -38,7 +39,7 @@ body{
     display: flex;
     list-style: none;
     gap:30px;
-    color: blue;
+    color:transparent;
 } 
 .nav-links a {
     color: pink;

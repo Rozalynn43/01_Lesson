@@ -21,23 +21,23 @@ body{
 .navbar { 
    background-color: #E53E3E;
    padding: 20px;
-   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-
+   
 
 }
 .nav-container{
     max-width: 1200px;
     margin:0 auto;
     display:flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+    
     background-color:#E53E3E;
 }
 
 .nav-links {
     list-style: none;
     gap:30px;
-    color: blue;
+    color:transparent;
+    display:flex;
 } 
 .nav-links a {
     color: pink;
@@ -95,26 +95,7 @@ body{
     animation: blink-caret 0.75s step-end infinite;
     
 }
-@keyframes typing{
-    from {width:0;}
-    to {width: 100%}
-}
-@keyframes erase{
-    from {width:100%;}
-    to {width: 0;}
 
-}
-@keyframes continuous-type{
-    0% {width: 0;}
-    40% {width: 100%;}
-    60% {width: 100%;}
-    100% {width: 0;}
-}
-
-/*@keyframes blink-caret{
-    from, to {border-color: transparent; }
-    50% {border-color: #ff8381; }
-} */
 
 .main-title{
     color: #FE5A55;

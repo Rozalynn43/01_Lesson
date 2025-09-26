@@ -1,4 +1,188 @@
-*{
+ body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: pink;
+        }
+        .navbar {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        .logo h2 {
+            margin: 0;
+            font-size: 1.5rem;
+            color: #333;
+        }
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover {
+            color: #6C63FF;
+        }
+        .nav-links a.active {
+            color: #FF8381;
+        }
+        .hero {
+            text-align: center;
+            padding: 8rem 2rem 4rem;
+            background: linear-gradient(135deg, #F5F7FA 0%, #E4E8F0 100%);
+        }
+       .hero-title{
+    Font-size: 2.5em;
+    color: #FE6066;
+    margin-bottom:20px;
+    text-align: center; 
+
+
+} 
+.hero-subtitle { 
+    color: #FF8381;
+    text-align: center;
+    font-size: 2em; 
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    margin: 0 auto;
+    animation: typing 3s steps(20, end) forwards, erase 2s steps(20, end) 3s forwards, continuous-type 5s steps(20, end) 6s infinite;
+}
+.hero-subtitle::after {
+    content: '';
+    border-right:3px solid #ff8381;
+    animation: blink-caret 0.75s step-end infinite;
+    
+}
+@keyframes typing{
+    from {width:0;}
+    to {width: 100%}
+}
+@keyframes erase{
+    from {width:100%;}
+    to {width: 0;}
+
+}
+@keyframes continuous-type{
+    0% {width: 0;}
+    40% {width: 100%;}
+    60% {width: 100%;}
+    100% {width: 0;}
+}
+        .main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            text-align: center;
+        }
+        .main-title {
+            font-size: 1.8rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+        .main-subtitle {
+            font-size: 1.3rem;
+            font-style: italic;
+            color: #555;
+            padding: 1rem;
+            border-left: 4px solid rgb;
+            background-color:rgb(190, 126, 137);
+            display: inline-block;
+        }
+        .Overview {
+            max-width: 1000px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+            text-align: center;
+        }
+        .Overview-title {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #444;
+        }
+        .overview-container {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 3rem 0;
+            flex-wrap: wrap;
+        }
+        .Overview-sub {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .Overview-sub:hover {
+            transform: translateY(-5px);
+        }
+        .Overview-sub img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .Overview-sub:hover .overlay {
+            opacity: 1;
+        }
+        .text {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: #333;
+            color: #fff;
+            margin-top: 3rem;
+        }
+
+/* *{
     margin:0;
     padding: 0;
     box-sizing: border-box;
@@ -21,7 +205,7 @@ body{
 .navbar { 
    background-color: #E53E3E;
    padding: 20px;
-}
+} 
 
 .nav-container{
     max-width: 1200px;
@@ -134,8 +318,7 @@ img{
     align-items:center;
     gap: 20px; 
     font-style: italic;
-    /* font-family:'Lucida Handwriting', cursive; */
-    
+
 
 }
 .container-grid{
@@ -145,50 +328,9 @@ img{
     text-align: center;
 }
 
-.hero-title{
-    Font-size: 2.5em;
-    color: #FE6066;
-    margin-bottom:20px;
-    text-align: center; 
 
 
-} 
-.hero-subtitle { 
-    color: #FF8381;
-    text-align: center;
-    font-size: 2em; 
-    overflow: hidden;
-    white-space: nowrap;
-    width: 0;
-    margin: 0 auto;
-    animation: typing 3s steps(20, end) forwards, erase 2s steps(20, end) 3s forwards, continuous-type 5s steps(20, end) 6s infinite;
-}
-.hero-subtitle::after {
-    content: '';
-    border-right:3px solid #ff8381;
-    animation: blink-caret 0.75s step-end infinite;
-    
-}
-@keyframes typing{
-    from {width:0;}
-    to {width: 100%}
-}
-@keyframes erase{
-    from {width:100%;}
-    to {width: 0;}
 
-}
-@keyframes continuous-type{
-    0% {width: 0;}
-    40% {width: 100%;}
-    60% {width: 100%;}
-    100% {width: 0;}
-}
-
-/*@keyframes blink-caret{
-    from, to {border-color: transparent; }
-    50% {border-color: #ff8381; }
-} */
 
 .main-title{
     color: #FE5A55;
@@ -226,4 +368,5 @@ img{
     background-color:pink; 
     position: bottom;
 
-}
+} 
+

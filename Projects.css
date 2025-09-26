@@ -7,8 +7,6 @@
 .navbar { 
    background-color: #E53E3E;
    padding: 20px;
-   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-   text-align:center;
 
 }
 .nav-container{
@@ -18,21 +16,30 @@
     justify-content: space-between;
     align-items: center; 
     background-color:#E53E3E;
+    font-size: italic;
 }
 
 .nav-links {
     display: flex;
     list-style: none;
     gap:30px;
-    color: blue;
+    color:transparent;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-style: italic;
+} 
 } 
 .nav-links a {
     color: pink;
     text-decoration: none;
-    font-size:18px;
+    font-size:25px;
     padding: 10px 20px;
     border-radius: 20px;
 
+}
+img{
+    width:40px;
 }
 
 .nav-links a:hover {
@@ -55,7 +62,7 @@
     max-width: 12px; 
     margin: 0 auto;
     padding: 40px 20px;
-    text-box: center;
+    align-items:  center;
 }
 .hero-section{
     background: white;

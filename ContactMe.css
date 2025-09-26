@@ -7,38 +7,37 @@
 .navbar { 
    background-color: #E53E3E;
    padding: 20px;
-   overflow: auto;
-   width:100%;
-   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-
-}
-img{
-    width: 30px;
 }
 .nav-container{
     max-width: 1200px;
     margin:0 auto;
     display:flex; 
-    justify-content: center; 
+    justify-content: space-between; 
+    align-items: center;
+    font-size: italic;
     background-color:#E53E3E;
 }
 
 .nav-links {
     list-style: none;
     gap:30px;
-    color: blue;
+    color:transparent;
+    display:flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-style: italic;
 } 
 .nav-links a {
     color: pink;
     text-decoration: none;
-    font-size:18px;
-    padding: 12px;
+    font-size:25px;
+    padding: 10px 20px;
     border-radius: 20px;
-    float:left;
-    width: 33.33%;
-    text-align:center;
 
-
+}
+img{
+    width:40px;
 }
 
 .nav-links a:hover {
@@ -53,15 +52,18 @@ img{
 
 .logo {
     color: White;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     text-decoration: none;
+    gap: 20px;
+    display: flex;
+    align-items: center;
 }
 .container-grid{
-    max-width: 12px; 
+    max-width: 1200px; 
     margin: 0 auto;
     padding: 40px 20px;
-    text-box: center;
+    text-align: center;
 }
 .hero-section{
     background: white;

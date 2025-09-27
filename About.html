@@ -3,52 +3,115 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="logo_no_bg.png" />
-
-    <title>About</title>
-<!--
-    <link rel ="stylesheet" href ="/style.css import the webpage's stylesheet -->
-
-    <!-- import the webpage's stylesheet -->
-<link rel="stylesheet" href="About.css">
-
-    <!-- import the webpage's javascript file -->
+    <meta name="author" content="Rozalynn Gholston">
+    <meta name="description" content="About Rozalynn Gholston - Aspiring Software Engineer">
+    <link rel="icon" href="logo_no_bg.png" type="image/x-icon" />
+    <title>About - Built by Roz</title>
     
+    <!-- Use the same CSS file as homepage for consistency -->
+    <link rel="stylesheet" href="main.css" type="text/css">
   </head>
+  
   <body>
     <header>
-    <nav class="navbar">
+      <nav class="navbar">
         <div class="nav-container">
           <div class="logo">
             <h2><img src="logo_no_bg.png" alt="icon" class="icon">Built by Roz</h2>
           </div>
-        <ul class="nav-links">
-           <a  href= "/index.html"><strong>Home</strong></a>
-           <a  href= "/About.html" class="active"><strong>About</strong></a>
-           <a  href= "/projects.html"><strong>Projects</strong></a>
-           <a  href= "/ContactMe.html"><strong>Contact</strong></a>
-        </ul>
+          <ul class="nav-links">
+            <a href="/index.html"><strong>Home</strong></a>
+            <a href="/About.html" class="active"><strong>About</strong></a>
+            <a href="/projects.html"><strong>Projects</strong></a>
+            <a href="/ContactMe.html"><strong>Contact</strong></a>
+          </ul>
         </div>
-    </nav>
-</header>
-    <h1> Rozalynn Gholston</h1> 
-    <h3>Aspiring Software Engineer</h3>
-    <div>
-    <img 
-    src="https://cdn.glitch.global/8d252c0f-5a5c-467a-ae31-57aa793844a4/Professional%20Headshot.jpg?v=1737679394462"
-             />
+      </nav>
+    </header>
 
-      <p>Hi, I'm Rozalynn Gholston, an aspiring software engineer with over 4 years of coding experience in Java, Python, and currently C++. I'm passionate about building real-world software solutions and continuously expanding my technical skill set.
+    <main>
+      <!-- Hero section similar to homepage -->
+      <section class="hero">
+        <h2 class="hero-title">Rozalynn Gholston</h2>
+        <p class="hero-subtitle"> Software Engineer</p>
+      </section>
 
-I'm currently a Computer Science major at Colorado State University Global, balancing my studies with a role at Amazon’s warehouse in Atlanta, GA. This experience has taught me discipline, adaptability, and the value of hard work—traits I carry into my approach to software engineering.
+      <!-- Main content section -->
+      <section class="main">
+        <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+          <img 
+            src="https://cdn.glitch.global/8d252c0f-5a5c-467a-ae31-57aa793844a4/Professional%20Headshot.jpg?v=1737679394462"
+            alt="Rozalynn Gholston Professional Headshot"
+            style="width: 300px; height: 300px; object-fit: cover; border-radius: 50%; margin: 2rem 0; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);"
+          />
+        </div>
+      </section>
 
-In the past, I’ve also worked with the nonprofit organization HYPE (Hope for Youth in Providing Education), where I contributed to projects focused on community impact and youth empowerment.
+      <!-- Overview section matching homepage structure -->
+      <section class="Overview">
+        <p class="Overview-title">
+          Hi, I'm Rozalynn Gholston, an aspiring software engineer with over 4 years of coding experience in Java, Python, and currently C++. I'm passionate about building real-world software solutions and continuously expanding my technical skill set.
+        </p>
+        
+        <p class="Overview-title">
+          I'm currently a Computer Science major at Colorado State University Global, balancing my studies with a role at Amazon's warehouse in Atlanta, GA. This experience has taught me discipline, adaptability, and the value of hard work—traits I carry into my approach to software engineering.
+        </p>
+        
+        <p class="Overview-title">
+          In the past, I've also worked with the nonprofit organization HYPE (Hope for Youth in Providing Education), where I contributed to projects focused on community impact and youth empowerment.
+        </p>
+        
+        <p class="Overview-title">
+          I aim to work as a software engineer at Amazon or another major tech company where I can grow as a developer and contribute to large-scale, innovative projects.
+        </p>
+        
+        <p class="Overview-title">
+          Be sure to check out the Projects tab—one highlight is a website I built completely from scratch using Glitch, which showcases my ability to bring ideas to life through code.
+        </p>
+      </section>
 
-I aim to work as a software engineer at Amazon or another major tech company where I can grow as a developer and contribute to large-scale, innovative projects.
+      <!-- Skills/Experience section using the same card structure as homepage -->
+      <main class="overview-container">
+        <section class="Overview-sub">
+          <div style="background: linear-gradient(135deg, #6C63FF 0%, #FF8381 100%); height: 300px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem; font-weight: bold; text-align: center;">
+            <div>
+              <h3>Programming Languages</h3>
+              <p>Java • Python • C++</p>
+            </div>
+          </div>
+          <div class="overlay">
+            <span class="text">4+ Years Experience</span>
+          </div>
+        </section>
 
-Be sure to check out the Projects tab—one highlight is a website I built completely from scratch using Glitch, which showcases my ability to bring ideas to life through code.</p>
-    </div>
-    
-    
+        <section class="Overview-sub">
+          <div style="background: linear-gradient(135deg, #FF8381 0%, #FE6066 100%); height: 300px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem; font-weight: bold; text-align: center;">
+            <div>
+              <h3>Education</h3>
+              <p>Computer Science Major<br>Colorado State University Global</p>
+            </div>
+          </div>
+          <div class="overlay">
+            <span class="text">Current Student</span>
+          </div>
+        </section>
+
+        <section class="Overview-sub">
+          <div style="background: linear-gradient(135deg, #FE6066 0%, #6C63FF 100%); height: 300px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem; font-weight: bold; text-align: center;">
+            <div>
+              <h3>Experience</h3>
+              <p>Amazon Warehouse<br>HYPE Nonprofit</p>
+            </div>
+          </div>
+          <div class="overlay">
+            <span class="text">Real-World Impact</span>
+          </div>
+        </section>
+      </main>
+    </main>
+
+    <footer class="footer">
+      &lt;&lt;&lt; &copy; Built By Roz Inc. ~ Learning and Developing Everyday. &gt;&gt;&gt;
+    </footer>
   </body>
 </html>

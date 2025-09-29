@@ -1,50 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="logo_no_bg.png" />
 
-    <title>Projects</title>
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta name= "author" content="Rozalynn Gholston"> 
+        <meta name="description" content="Projects page showcasing coding work and development journey"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Projects - Built by Roz</title> 
+         <link rel="icon" href="logo_no_bg.png" type="image/x-icon">
+        <link rel="stylesheet" href="Projects.css" type="text/css">
+    </head>
 
-    <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="Projects.css" />
-
-    <!-- import the webpage's stylesheet -->
-
-    <!-- import the webpage's javascript file -->
-   
-  </head>  
-<body>
-  <nav class="navbar">
-        <div class="nav-container">
-            <a href="#" class="logo">Built by Roz</a>
-        <ul class="nav-links">
-            <a  href= "/index.html"><strong>Home</strong></a>
-            <a  href= "/About.html" ><strong>About</strong></a>
-            <a  href= "/projects.html" class="active"><strong>Projects</strong></a>
-            <a  href= "/ContactMe.html"><strong>Contact</strong></a>
-        </ul>
-        </div>
+    <body>
+        <header>
+           <nav class="navbar">
+             <div class="nav-container">
+            <div class="logo">
+                <h2><img src="logo_no_bg.png" alt="icon" class="icon">Built by Roz</h2>
+            </div>
+              <ul class="nav-links">
+                 <a href="/index.html"><strong>Home</strong></a>
+                 <a href="/About.html"><strong>About</strong></a>
+                 <a href="/projects.html" class="active"><strong>Projects</strong></a>
+                 <a href="/ContactMe.html"><strong>Contact</strong></a>
+                 </ul>
+           </div>  
     </nav>
-  <h2> Welcome to the my world of Coding! </h2>
-  <p> Welcome to my coding projects page!
-Here you'll find a collection of the software, apps, and tools I've built — from passion projects to professional work. Each project reflects my growth as a developer and my commitment to writing clean, efficient, and thoughtful code. Whether you're here to browse, collaborate, or hire, I hope these projects give you a clear sense of what I can do.</p> 
-  <h3>My Current Website </h3>
-  <p>This website is a significant step forward from my very first project — a water scarcity awareness site built during my internship at HYPE using Glitch. That assignment introduced me to web development and taught me how coding can be used in educational settings.
+    </header>
 
-Now, with a stronger grasp of HTML, CSS, and JavaScript, I’ve created this portfolio to showcase my growth and the projects I’ve built since then. The design is cleaner, more interactive, and reflects my evolving style as a developer. I’ve included features like tabbed navigation, project galleries, and responsive layouts to make the site both functional and engaging.
+    <main>
+      <section class="hero">
+        <h2 class="hero-title">Welcome to My World of Coding!</h2> 
+        <p class="hero-subtitle">She is building amazing projects.</p>
+      </section> 
 
-This portfolio isn't just a collection of my work — it's also a reflection of how far I’ve come, and where I’m headed next.</p>
-  <a href="https://envirnmental-issues-project.glitch.me"><strong>Water Scarcity-Live</strong></a>
-  <br><a href= "https://glitch.com/edit/#!/envirnmental-issues-project"><strong>Water Scarcity-Code</strong></a>
-  <p>One of the first websites I ever built was a project on water scarcity, completed just last year during my internship at HYPE. As part of the assignment, I was tasked with creating a website from scratch using Glitch. The goal was to design an educational resource that could help raise awareness about global water issues while also serving as a tool to integrate coding into school curricula. It was a meaningful project that not only introduced me to web development but also highlighted how technology can be used to support learning and social impact. </p> 
-  <h3>VS Code,jGRASP,Python</h3> 
-  <p>During my time in college, I used a combination of development tools to complete assignments and build my programming foundation. Each tool played a unique role in helping me learn and apply five different coding languages — including HTML and CSS, which were later used to create this portfolio website.</p> 
-  <li>jGRASP was the first IDE I worked with, used primarily for my Java assignments. It helped me understand basic object-oriented concepts and visualize program structure, which was incredibly helpful when learning file management and class design.</li>
-  <a href = "https://1drv.ms/u/c/9b49f7c4a8b5d977/EXfZtajE90kggJvdDwAAAAAB0jAEKA3I59Edbpiqx60BBQ?e=b64xZg"><strong> Click Java File Here </strong></a> 
-  <li>Python 3.2 came next, where I focused on scripting and automation. This version helped me write simple programs and introduced me to clean, readable code early on in my learning.</li>
-  <a href = "https://1drv.ms/u/c/9b49f7c4a8b5d977/EXfZtajE90kggJvdDwAAAAAB0jAEKA3I59Edbpiqx60BBQ?e=b64xZg"><strong> Click Python File Here </strong></a>  
+      <section class="main">
+          <h3 class="main-title">My Coding Journey</h3>
+       <p class="main-subtitle">"Every project is a step forward in my development journey!"</p>
+      </section>
+        
+       <section class="Overview">
+        <p class="Overview-title">Welcome to my coding projects page! Here you'll find a collection of the software, apps, and tools I've built — from passion projects to professional work. Each project reflects my growth as a developer and my commitment to writing clean, efficient, and thoughtful code. Whether you're here to browse, collaborate, or hire, I hope these projects give you a clear sense of what I can do.</p> 
+       </section>
 
-</body>
-</html>
+       <!-- Project Sections -->
+       <div class="projects-container">
+           <section class="project-section">
+               <h3 class="project-title">My Current Website</h3>
+               <p class="project-description">This website is a significant step forward from my very first project — a water scarcity awareness site built during my internship at HYPE using Glitch. That assignment introduced me to web development and taught me how coding can be used in educational settings.</p>
+               
+               <p class="project-description">Now, with a stronger grasp of HTML, CSS, and JavaScript, I've created this portfolio to showcase my growth and the projects I've built since then. The design is cleaner, more interactive, and reflects my evolving style as a developer. I've included features like tabbed navigation, project galleries, and responsive layouts to make the site both functional and engaging.</p>
+               
+               <p class="project-description">This portfolio isn't just a collection of my work — it's also a reflection of how far I've come, and where I'm headed next.</p>
+           </section>
+
+           <section class="project-section">
+               <h3 class="project-title">Water Scarcity Project</h3>
+               <p class="project-description">One of the first websites I ever built was a project on water scarcity, completed just last year during my internship at HYPE. As part of the assignment, I was tasked with creating a website from scratch using Glitch. The goal was to design an educational resource that could help raise awareness about global water issues while also serving as a tool to integrate coding into school curricula.</p>
+               
+               <div class="project-links">
+                   <a href="https://envirnmental-issues-project.glitch.me" class="project-link"><strong>Water Scarcity - Live Site</strong></a>
+                   <a href="https://glitch.com/edit/#!/envirnmental-issues-project" class="project-link"><strong>Water Scarcity - View Code</strong></a>
+               </div>
+           </section>
+
+           <section class="project-section">
+               <h3 class="project-title">Development Tools & Languages</h3>
+               <p class="project-description">During my time in college, I used a combination of development tools to complete assignments and build my programming foundation. Each tool played a unique role in helping me learn and apply five different coding languages — including HTML and CSS, which were later used to create this portfolio website.</p>
+               
+               <div class="tools-list">
+                   <div class="tool-item">
+                       <h4 class="tool-name">jGRASP & Java</h4>
+                       <p class="tool-description">jGRASP was the first IDE I worked with, used primarily for my Java assignments. It helped me understand basic object-oriented concepts and visualize program structure, which was incredibly helpful when learning file management and class design.</p>
+                       <a href="https://1drv.ms/u/c/9b49f7c4a8b5d977/EXfZtajE90kggJvdDwAAAAAB0jAEKA3I59Edbpiqx60BBQ?e=b64xZg" class="project-link"><strong>View Java Files</strong></a>
+                   </div>
+                   
+                   <div class="tool-item">
+                       <h4 class="tool-name">Python 3.2</h4>
+                       <p class="tool-description">Python 3.2 came next, where I focused on scripting and automation. This version helped me write simple programs and introduced me to clean, readable code early on in my learning.</p>
+                       <a href="https://1drv.ms/u/c/9b49f7c4a8b5d977/EXfZtajE90kggJvdDwAAAAAB0jAEKA3I59Edbpiqx60BBQ?e=b64xZg" class="project-link"><strong>View Python Files</strong></a>
+                   </div>
+               </div>
+           </section>
+       </div>
+    </main>
+
+    <footer class="footer">
+       &lt;&lt;&lt; &copy; Built By Roz Inc. ~ Learning and Developing Everyday. &gt;&gt;&gt;
+    </footer>

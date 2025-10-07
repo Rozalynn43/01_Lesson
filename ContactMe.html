@@ -1,30 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head> 
-        <meta charset="UTF-8"> 
-        <meta name= "author" content="Rozalynn Gholston"> 
-        <meta name="description" content="This page contians all the things I am learning how to create as I learn HTML "> 
-        <meta name="viewpoint" content="width=device-width, intial-scale=1.0">
-         <title>Contact</title> 
-         <link rel="icon" href="b" type="image/x-icon">
-        <link rel="stylesheet" href="ContactMe.css" type="text/css">
-    </head>
-    <body>
-     <nav class="navbar">
-        <div class="nav-container">
-           <div class="logo">
-                <p2><img src="logo_no_bg.png" alt="icon">Built by Roz</p2>
-            </div>
-        <ul class="nav-links">
-            <a  href= "/index.html"><strong>Home</strong></a>
-            <a  href= "/About.html"><strong>About</strong></a>
-            <a  href= "/projects.html"><strong>Projects</strong></a>
-            <a  href= "/ContactMe.html" class="active"><strong>Contact<strong></a>
-        </div>
-    </nav>
-   
-     </body>
-     </html>
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="author" content="Rozalynn Gholston"> 
+    <meta name="description" content="Contact Rozalynn Gholston - Software Engineer"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Built by Roz</title> 
+    <link rel="icon" href="logo_no_bg.png" type="image/x-icon">
+    <link rel="stylesheet" href="ContactMe.css" type="text/css">
+    <script src="contact.js"></script>
+</head>
 
-s
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h2><img src="logo_no_bg.png" alt="icon" class="icon">Built by Roz</h2>
+                </div>
+                <ul class="nav-links">
+                    <a href="/index.html"><strong>Home</strong></a>
+                    <a href="/About.html"><strong>About</strong></a>
+                    <a href="/projects.html"><strong>Projects</strong></a>
+                    <a href="/ContactMe.html" class="active"><strong>Contact</strong></a>
+                </ul>
+            </div>  
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2 class="hero-title">Get In Touch</h2> 
+            <p class="hero-subtitle">Let's build something amazing together!</p>
+        </section>
+
+        <div class="contact-container">
+            <div class="contact-intro">
+                <h3>Let's Connect!</h3>
+                <p>Have a project in mind or just want to say hello? I'd love to hear from you!</p>
+            </div>
+
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+
+            <div class="contact-info">
+                <h3>Other Ways to Reach Me</h3>
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <h4>Email</h4>
+                        <p>Rozalynn43@gmail.com</p>
+                    </div>
+                    <div class="contact-method">
+                        <h4>LinkedIn</h4>
+                        <p><a href="https://www.linkedin.com/in/rozalynn-gholston">Rozalynn Gholston</a></p>
+                    </div>
+                    <div class="contact-method">
+                        <h4>GitHub</h4>
+                        <p><a href="https://github.com/Rozalynn43">Rozalynn43</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        &lt;&lt;&lt; &copy; Built By Roz Inc. ~ Learning and Developing Everyday. &gt;&gt;&gt;
+    </footer>
+</body>
+
+</html>

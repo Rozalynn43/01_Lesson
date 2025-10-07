@@ -74,6 +74,7 @@ body {
     overflow: hidden;
     white-space: nowrap;
     width: 0;
+    justify-content: center;
     margin: 0 auto;
     /* animation: typing 3s steps(20, end) forwards, erase 2s steps(20, end) 3s forwards, continuous-type 5s steps(20, end) 6s infinite; */
 }

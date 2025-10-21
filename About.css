@@ -8,51 +8,60 @@ body {
 }
 
 .navbar {
-            background-color: #fff;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            padding: 1rem 0;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-        }
-        .nav-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
-        .logo {
-            display: flex;
-            align-items: center;
-        }
-        .logo img {
-            height: 40px;
-            margin-right: 10px;
-        }
-        .logo h2 {
-            margin: 0;
-            font-size: 1.5rem;
-            color: #333;
-        }
-        .nav-links {
-            display: flex;
-            list-style: center;
-            gap: 2rem;
-        }
-        .nav-links a {
-            text-decoration: none;
-            color: #333;
-            font-weight: 600;
-            transition: color 0.3s;
-        }
-        .nav-links a:hover {
-            color: #6C63FF;
-        }
-        .nav-links a.active {
-            color: #FF8381;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.nav-links {
+    display: flex;
+    list-style: center;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #6C63FF;
+}
+
+.nav-links a.active {
+    color: #FF8381;
+}
 
 .hero {
     text-align: center;
@@ -60,52 +69,19 @@ body {
     background: linear-gradient(135deg, #F5F7FA 0%, #E4E8F0 100%);
 }
 
-.hero-title{
+.hero-title {
     font-size: 2.5em;
     color: #FE6066;
     margin-bottom: 20px;
-    text-align: center; 
-} 
+    text-align: center;
+}
 
-.hero-subtitle { 
+.hero-subtitle {
     color: #FF8381;
     text-align: center;
-    font-size: 2em; 
-    overflow: hidden;
-    white-space: nowrap;
-    width: 0;
-    justify-content: center;
+    font-size: 2em;
     margin: 0 auto;
-    /* animation: typing 3s steps(20, end) forwards, erase 2s steps(20, end) 3s forwards, continuous-type 5s steps(20, end) 6s infinite; */
 }
-
-.hero-subtitle::after {
-    content: '';
-    border-right: 3px solid #ff8381;
-    /* animation: blink-caret 0.75s step-end infinite; */
-}
-
-/* @keyframes typing{
-    from {width: 0;}
-    to {width: 100%}
-}
-
-@keyframes erase{
-    from {width: 100%;}
-    to {width: 0;}
-}
-
-@keyframes continuous-type{
-    0% {width: 0;}
-    40% {width: 100%;}
-    60% {width: 100%;}
-    100% {width: 0;}
-}
-
-@keyframes blink-caret {
-    from, to {border-color: transparent}
-    50% {border-color: #ff8381}
-} */
 
 .main {
     max-width: 800px;
@@ -172,6 +148,12 @@ body {
     object-fit: cover;
 }
 
+.Overview-sub > div:first-child {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
 .overlay {
     position: absolute;
     top: 0;
@@ -206,7 +188,7 @@ body {
 }
 
 /* Responsive design for smaller screens */
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
     .nav-container {
         flex-direction: column;
         gap: 1rem;
@@ -225,7 +207,7 @@ body {
     .nav-links a {
         font-size: 0.9rem;
         padding: 0.3rem 0.8rem;
-    } */
+    }
     
     .hero {
         padding: 10rem 1rem 3rem;
